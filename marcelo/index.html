@@ -1,84 +1,266 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Marcelo Moreira | UniFlex PRO</title>
+<title>Marcelo Moreira | UniFlex PRO</title>
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+<style>
 
-        body{
-            font-family:Arial, Helvetica, sans-serif;
-            background:#f5f5f5;
-            display:flex;
-            justify-content:center;
-            padding:30px 15px;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .card{
-            width:100%;
-            max-width:420px;
-            background:#fff;
-            border-radius:25px;
-            overflow:hidden;
-            box-shadow:0 10px 30px rgba(0,0,0,.15);
-        }
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f3f5f7;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:25px 15px;
+}
 
-        .banner{
-            height:180px;
-            background:linear-gradient(
-                135deg,
-                #003366 0%,
-                #005fa3 100%
-            );
-            position:relative;
-        }
+.container{
+    width:100%;
+    max-width:420px;
+}
 
-        .logo{
-            width:160px;
-            position:absolute;
-            top:20px;
-            left:50%;
-            transform:translateX(-50%);
-        }
+.card{
+    background:#ffffff;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
 
-        .profile{
-            width:140px;
-            height:140px;
-            border-radius:50%;
-            border:5px solid white;
-            object-fit:cover;
-            position:absolute;
-            bottom:-70px;
-            left:50%;
-            transform:translateX(-50%);
-            box-shadow:0 5px 15px rgba(0,0,0,.2);
-        }
+.banner{
+    height:180px;
+    background:#003366;
+    position:relative;
+}
 
-        .content{
-            padding:90px 25px 30px;
-        }
+.logo{
+    width:170px;
+    position:absolute;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+}
 
-        h1{
-            text-align:center;
-            color:#222;
-            margin-bottom:10px;
-            font-size:32px;
-        }
+.profile{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #fff;
+    position:absolute;
+    bottom:-70px;
+    left:50%;
+    transform:translateX(-50%);
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
 
-        .position{
-            text-align:center;
-            color:#666;
-            line-height:1.5;
-            margin-bottom:30px;
- 
+.content{
+    padding:90px 25px 30px 25px;
+}
+
+.name{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    color:#222;
+}
+
+.role{
+    text-align:center;
+    color:#666;
+    margin-top:10px;
+    line-height:1.5;
+}
+
+.icons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:35px;
+}
+
+.icons a{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    text-decoration:none;
+    color:#fff;
+    transition:0.3s;
+}
+
+.icons a:hover{
+    transform:scale(1.08);
+}
+
+.phone{
+    background:#003366;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.email{
+    background:#EA4335;
+}
+
+.website{
+    background:#555;
+}
+
+.facebook{
+    background:#1877F2;
+}
+
+.contact{
+    background:#f5a623;
+}
+
+.save-contact{
+    display:block;
+    margin-top:30px;
+    text-align:center;
+    padding:15px;
+    background:#003366;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:bold;
+}
+
+.save-contact:hover{
+    background:#0056a6;
+}
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    color:#666;
+    font-weight:bold;
+}
+
+.qrcode{
+    text-align:center;
+    margin-top:25px;
+}
+
+.qrcode-box{
+    width:150px;
+    height:150px;
+    margin:auto;
+    border:2px dashed #cccccc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    color:#888;
+    font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="banner">
+
+    <img src="logo.jpg" alt="UniFlex PRO" class="logo">
+
+    <img src="foto.jpeg" alt="Marcelo Moreira" class="profile">
+
+</div>
+
+<div class="content">
+
+    <div class="name">
+        Marcelo Moreira
+    </div>
+
+    <div class="role">
+        Diretor de Projetos de Construção
+    </div>
+
+    <div class="icons">
+
+        <a href="tel:+351966308710" class="phone" title="Telefone">
+            <i class="fas fa-phone"></i>
+        </a>
+
+        <a href="https://wa.me/351966308710"
+           class="whatsapp"
+           target="_blank"
+           title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="mailto:marcelo@uniflexpro.com"
+           class="email"
+           title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://uniflexpro.com"
+           class="website"
+           target="_blank"
+           title="Website">
+            <i class="fas fa-globe"></i>
+        </a>
+
+        <a href="https://www.facebook.com/uniflexprolda"
+           class="facebook"
+           target="_blank"
+           title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="contacto.vcf"
+           class="contact"
+           title="Guardar Contacto">
+            <i class="fas fa-address-card"></i>
+        </a>
+
+    </div>
+
+    <a href="contacto.vcf" class="save-contact">
+        Guardar Contacto
+    </a>
+
+    <div class="qrcode">
+        <div class="qrcode-box">
+            QR CODE
+        </div>
+    </div>
+
+    <div class="footer">
+        UniFlex PRO
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
