@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -23,7 +24,8 @@ body{
     min-height:100vh;
     display:flex;
     justify-content:center;
-    padding:25px 15px;
+    align-items:center;
+    padding:20px;
 }
 
 .container{
@@ -35,52 +37,59 @@ body{
     background:#ffffff;
     border-radius:25px;
     overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    box-shadow:0 10px 35px rgba(0,0,0,0.15);
 }
 
 .banner{
-    height:180px;
-    background:#003366;
+    height:220px;
+    background:linear-gradient(
+        135deg,
+        #003366 0%,
+        #0066b3 50%,
+        #0094ff 100%
+    );
     position:relative;
 }
 
 .logo{
-    width:170px;
+    width:180px;
     position:absolute;
-    top:20px;
+    top:15px;
     left:50%;
     transform:translateX(-50%);
+    object-fit:contain;
 }
 
 .profile{
-    width:140px;
-    height:140px;
+    width:150px;
+    height:150px;
     border-radius:50%;
     object-fit:cover;
-    border:5px solid #fff;
+    border:5px solid #ffffff;
     position:absolute;
-    bottom:-70px;
+    bottom:-75px;
     left:50%;
     transform:translateX(-50%);
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    box-shadow:0 5px 20px rgba(0,0,0,0.25);
 }
 
 .content{
-    padding:90px 25px 30px 25px;
+    padding:95px 25px 30px;
 }
 
 .name{
     text-align:center;
     font-size:30px;
-    font-weight:bold;
+    font-weight:700;
     color:#222;
 }
 
 .role{
     text-align:center;
     color:#666;
+    font-size:15px;
     margin-top:10px;
-    line-height:1.5;
+    line-height:1.6;
 }
 
 .icons{
@@ -98,9 +107,9 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:24px;
     text-decoration:none;
     color:#fff;
+    font-size:24px;
     transition:0.3s;
 }
 
@@ -121,7 +130,7 @@ body{
 }
 
 .website{
-    background:#555;
+    background:#444444;
 }
 
 .facebook{
@@ -134,43 +143,44 @@ body{
 
 .save-contact{
     display:block;
-    margin-top:30px;
     text-align:center;
-    padding:15px;
+    margin-top:30px;
+    padding:16px;
+    border-radius:12px;
     background:#003366;
     color:white;
     text-decoration:none;
-    border-radius:12px;
     font-weight:bold;
+    font-size:16px;
 }
 
 .save-contact:hover{
     background:#0056a6;
 }
 
-.footer{
-    text-align:center;
-    margin-top:30px;
-    color:#666;
-    font-weight:bold;
-}
-
 .qrcode{
+    margin-top:30px;
     text-align:center;
-    margin-top:25px;
 }
 
 .qrcode-box{
     width:150px;
     height:150px;
     margin:auto;
-    border:2px dashed #cccccc;
+    border:2px dashed #d0d0d0;
+    border-radius:12px;
     display:flex;
     justify-content:center;
     align-items:center;
-    border-radius:10px;
-    color:#888;
+    color:#999;
     font-size:14px;
+}
+
+.footer{
+    text-align:center;
+    margin-top:25px;
+    color:#666;
+    font-weight:bold;
 }
 
 </style>
@@ -181,84 +191,92 @@ body{
 
 <div class="container">
 
-<div class="card">
+    <div class="card">
 
-<div class="banner">
+        <div class="banner">
 
-    <img src="logo.jpg" alt="UniFlex PRO" class="logo">
+            <img src="logo.png"
+                 alt="UniFlex PRO"
+                 class="logo">
 
-    <img src="foto.jpeg" alt="Marcelo Moreira" class="profile">
+            <img src="foto.jpeg"
+                 alt="Marcelo Moreira"
+                 class="profile">
 
-</div>
-
-<div class="content">
-
-    <div class="name">
-        Marcelo Moreira
-    </div>
-
-    <div class="role">
-        Diretor de Projetos de Construção
-    </div>
-
-    <div class="icons">
-
-        <a href="tel:+351966308710" class="phone" title="Telefone">
-            <i class="fas fa-phone"></i>
-        </a>
-
-        <a href="https://wa.me/351966308710"
-           class="whatsapp"
-           target="_blank"
-           title="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-
-        <a href="mailto:marcelo@uniflexpro.com"
-           class="email"
-           title="Email">
-            <i class="fas fa-envelope"></i>
-        </a>
-
-        <a href="https://uniflexpro.com"
-           class="website"
-           target="_blank"
-           title="Website">
-            <i class="fas fa-globe"></i>
-        </a>
-
-        <a href="https://www.facebook.com/uniflexprolda"
-           class="facebook"
-           target="_blank"
-           title="Facebook">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-
-        <a href="contacto.vcf"
-           class="contact"
-           title="Guardar Contacto">
-            <i class="fas fa-address-card"></i>
-        </a>
-
-    </div>
-
-    <a href="contacto.vcf" class="save-contact">
-        Guardar Contacto
-    </a>
-
-    <div class="qrcode">
-        <div class="qrcode-box">
-            QR CODE
         </div>
+
+        <div class="content">
+
+            <div class="name">
+                Marcelo Moreira
+            </div>
+
+            <div class="role">
+                Diretor de Projetos de Construção
+            </div>
+
+            <div class="icons">
+
+                <a href="tel:+351966308710"
+                   class="phone"
+                   title="Telefone">
+                    <i class="fas fa-phone"></i>
+                </a>
+
+                <a href="https://wa.me/351966308710"
+                   target="_blank"
+                   class="whatsapp"
+                   title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="mailto:marcelo@uniflexpro.com"
+                   class="email"
+                   title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <a href="https://uniflexpro.com"
+                   target="_blank"
+                   class="website"
+                   title="Website">
+                    <i class="fas fa-globe"></i>
+                </a>
+
+                <a href="https://www.facebook.com/uniflexprolda"
+                   target="_blank"
+                   class="facebook"
+                   title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="contacto.vcf"
+                   class="contact"
+                   title="Guardar Contacto">
+                    <i class="fas fa-address-card"></i>
+                </a>
+
+            </div>
+
+            <a href="contacto.vcf" class="save-contact">
+                Guardar Contacto
+            </a>
+
+            <div class="qrcode">
+
+                <div class="qrcode-box">
+                    QR CODE
+                </div>
+
+            </div>
+
+            <div class="footer">
+                UniFlex PRO
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="footer">
-        UniFlex PRO
-    </div>
-
-</div>
-
-</div>
 
 </div>
 
